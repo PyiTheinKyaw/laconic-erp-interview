@@ -48,7 +48,7 @@ const VendorInfo = () => {
                                         value={vendorName}
                                         onChange={(e) => setVendorName(e.target.value)}
                                     />
-                                    <label htmlFor="vname">Vendor's Name</label>
+                                    <label htmlFor="vname">Vendor Name</label>
                                 </span>
                             </div>
 
@@ -60,7 +60,7 @@ const VendorInfo = () => {
                                         value={vPhNo}
                                         onChange={(e) => setVPhNo(e.target.value)}
                                     />
-                                    <label htmlFor="vphno">Vendor's Phone</label>
+                                    <label htmlFor="vphno">Vendor Phone</label>
                                 </span>
                             </div>
 
@@ -72,7 +72,7 @@ const VendorInfo = () => {
                                         value={vEmail}
                                         onChange={(e) => setVEmail(e.target.value)}
                                     />
-                                    <label htmlFor="vemail">Vendor's Email</label>
+                                    <label htmlFor="vemail">Vendor Email</label>
                                 </span>
                             </div>
 

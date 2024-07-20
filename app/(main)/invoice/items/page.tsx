@@ -169,22 +169,22 @@ const Items = () => {
                 {/* Vendor Info */}
                 <div className="p-fluid formgrid grid">
                     <div className="field col-12 md:col-4">
-                        <label htmlFor="vendorName">Vendor's Name</label>
+                        <label htmlFor="vendorName">Vendor Name</label>
                         <InputText id="vendorName" value={context?.invoice.vendor?.name} readOnly={true}></InputText>
                     </div>
 
                     <div className="field col-12 md:col-4">
-                        <label htmlFor="vendorPhno">Vendor's Phone No</label>
+                        <label htmlFor="vendorPhno">Vendor Phone No</label>
                         <InputText id="vendorPhno" value={context?.invoice.vendor?.ph_no} readOnly={true}></InputText>
                     </div>
 
                     <div className="field col-12 md:col-4">
-                        <label htmlFor="vendorEmail">Vendor's Phone No</label>
+                        <label htmlFor="vendorEmail">Vendor Phone No</label>
                         <InputText id="vendorEmail" value={context?.invoice.vendor?.email} readOnly={true}></InputText>
                     </div>
 
                     <div className="field col-12">
-                        <label htmlFor="vendorAddr">Vendor's Address</label>
+                        <label htmlFor="vendorAddr">Vendor Address</label>
                         <InputTextarea id="vendorAddr" value={context?.invoice.vendor?.address} readOnly={true}></InputTextarea>
                     </div>                    
                 </div>

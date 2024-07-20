@@ -11,32 +11,36 @@ import { Demo } from '@/types';
 import { ChartData, ChartOptions } from 'chart.js';
 import { APService } from '@/demo/service/AcountingPayableService';
 
-const documentStyle = getComputedStyle(document.documentElement);
-const textColor = documentStyle.getPropertyValue('--text-color') || '#495057';
 
-const pieData: ChartData = {
-    labels: ['Pending', 'Approved', 'Paid'],
-    datasets: [
-        {
-            data: [540, 325, 702],
-            backgroundColor: [documentStyle.getPropertyValue('--indigo-500') || '#6366f1', documentStyle.getPropertyValue('--purple-500') || '#a855f7', documentStyle.getPropertyValue('--teal-500') || '#14b8a6'],
-            hoverBackgroundColor: [documentStyle.getPropertyValue('--indigo-400') || '#8183f4', documentStyle.getPropertyValue('--purple-400') || '#b975f9', documentStyle.getPropertyValue('--teal-400') || '#41c5b7']
-        }
-    ]
-};
-
-const pieOptions: ChartOptions = {
-    plugins: {
-        legend: {
-            labels: {
-                usePointStyle: true,
-                color: textColor
-            }
-        }
-    }
-};
 
 const Dashboard = () => {
+
+
+    const documentStyle = getComputedStyle(document.documentElement);
+    const textColor = documentStyle.getPropertyValue('--text-color') || '#495057';
+    
+    const pieData: ChartData = {
+        labels: ['Pending', 'Approved', 'Paid'],
+        datasets: [
+            {
+                data: [540, 325, 702],
+                backgroundColor: [documentStyle.getPropertyValue('--indigo-500') || '#6366f1', documentStyle.getPropertyValue('--purple-500') || '#a855f7', documentStyle.getPropertyValue('--teal-500') || '#14b8a6'],
+                hoverBackgroundColor: [documentStyle.getPropertyValue('--indigo-400') || '#8183f4', documentStyle.getPropertyValue('--purple-400') || '#b975f9', documentStyle.getPropertyValue('--teal-400') || '#41c5b7']
+            }
+        ]
+    };
+    
+    const pieOptions: ChartOptions = {
+        plugins: {
+            legend: {
+                labels: {
+                    usePointStyle: true,
+                    color: textColor
+                }
+            }
+        }
+    };
+
     const [invoices, setInvoices] = useState<Demo.Invoice[]>([]);
     const [grandTotal, setGrandTotal] = useState<any>([]);
 

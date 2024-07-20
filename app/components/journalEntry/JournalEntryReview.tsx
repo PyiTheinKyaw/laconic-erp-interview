@@ -115,7 +115,7 @@ export const JournalEntryReview = (props: JournalEntryProps) => {
                                     </div>
 
                                     <div className="field col-12 md:col-4">
-                                        <label htmlFor="invoiceIssuedDate">Invoice's Issued Date</label>
+                                        <label htmlFor="invoiceIssuedDate">Invoice Issued Date</label>
                                         <InputText
                                             id="invoiceIssuedDate"
                                             value={formatUnixDate(props.review.invoice.issue_date)}
@@ -124,7 +124,7 @@ export const JournalEntryReview = (props: JournalEntryProps) => {
                                     </div>
 
                                     <div className="field col-12 md:col-4">
-                                        <label htmlFor="InvoiceDueDate">Invoice's Due Date</label>
+                                        <label htmlFor="InvoiceDueDate">Invoice Due Date</label>
                                         <InputText
                                             value={formatUnixDate(props.review.invoice.due_date)} 
                                             id='InvoiceDueDate'
@@ -145,7 +145,7 @@ export const JournalEntryReview = (props: JournalEntryProps) => {
                                     </div>
 
                                     <div className="field col-12 md:col-6">
-                                        <label htmlFor="jIssuedDate">Journal Entry's Issue Date</label>
+                                        <label htmlFor="jIssuedDate">Journal Entry Issue Date</label>
                                         <InputText
                                             type="text"
                                             id="jIssuedDate"
@@ -158,7 +158,7 @@ export const JournalEntryReview = (props: JournalEntryProps) => {
                                 {/* ---------------------------------- */}
                                 <div className="p-fluid formgrid grid">
                                     <div className="field col-12 md:col-6">
-                                        <label htmlFor="vName">Vendor's Name</label>
+                                        <label htmlFor="vName">Vendor Name</label>
                                         <InputText
                                             value={props.review.invoice.vendor?.name} 
                                             id='vName'
