@@ -1,0 +1,56 @@
+{
+	"data": [
+		{
+			"invoice": {
+				"id": "INV-000001",
+				"issue_date": 1657930800,
+				"due_date": 1657930800,
+				"status": "RECORDED",
+				"net_amount": 1230000.231,
+				"vendor": {
+					"name": "Ashley Lopez",
+					"address": "2987 Elm St",
+					"ph_no": "5551234567",
+					"email": "ashleylopez@example.com"
+				},
+				"purchase": [
+					{
+						"purchase_order_number": "PON-00001",
+						"description": "testing",
+						"quantity": 100,
+						"uint_price": 1000,
+						"total_amount": 100000,
+						"tax": 1,
+						"additional_charges": 200,
+						"discount": 50,
+						"grand_total": 102450
+					},
+					{
+						"purchase_order_number": "PON-00002",
+						"description": "testing",
+						"quantity": 100,
+						"uint_price": 1000,
+						"total_amount": 100000,
+						"tax": 1,
+						"additional_charges": 200,
+						"discount": 50,
+						"grand_total": 102450
+					}
+				]
+			},
+			"journal_entry": {
+				"entry_id": "JEN_00000001",
+				"issued_date": 1657930800,
+				"credit_account": {
+					"account_number": "INV_000000000001",
+					"account_type": "AccountsReceivable"
+				},
+				"debit_account": {
+					"account_number": "INV_000000000002",
+					"account_type": "AccountsReceivable"
+				},
+				"transaction_type": "PURCHASE"
+			}
+		}	  
+	]
+}
